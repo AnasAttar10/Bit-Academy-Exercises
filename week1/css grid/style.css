@@ -1,0 +1,189 @@
+ /* ex1  */
+/* 
+ #chat{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i";
+}
+
+#friends{
+    grid-area: f;
+    display: grid;
+    background-color: rgb(203, 100, 203);
+    padding: 10px;
+    grid-template-rows: 2fr repeat(4,1fr);
+    align-items: flex-start;
+}
+#friends > p{
+    background-color: gray;
+    padding: 5px;
+
+}
+#chatbox{
+    grid-area: c;
+    display: grid;
+    align-items: center;
+}
+.text-container{
+    display: grid;
+    grid-template-columns:auto auto;
+    margin: 10px;
+}
+
+.left{
+    justify-content: start; 
+}
+.right{
+    justify-content: end;
+}
+
+.text{
+    padding: 15px;
+}
+.right >p {
+    background-color: greenyellow;
+}
+.left > p {
+    background-color: gray;
+}
+.time{
+    display: grid;
+    font-size: 16px;
+    align-content: end;
+    padding: 2px;
+}
+#input{
+    grid-area: i;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-content:center ;
+
+}
+#input >div{
+    background-color: rgb(203, 100, 203);
+    color: white;
+    text-align: center;
+    padding: 10px;
+} */
+
+/* ex2 */
+
+.my-layout{
+    display: grid;
+    background-color: antiquewhite;
+    height: 100vh;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "n n n n n"
+    "as m m ar ar"
+    "f f f f f";
+    grid-gap: 30px;
+}
+
+.nav{
+    grid-area: n;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+
+.nav .logo > img{
+    width: 20%;
+    height: 80px;
+}
+.nav > .links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav > .links >li{
+    margin: 0 10px;
+}
+.nav > .links >li>a{
+    text-decoration: none;
+    color: white;
+}
+.nav > .links >li>a:hover{
+    color: rgb(179, 75, 75);
+}
+
+.aside{
+    grid-area: as;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    justify-content: end;
+}
+.parent-letters{
+    border: 4px solid gray ;
+}
+.parent-letters > div {
+    display: grid;
+    height: 24%;
+    border-bottom: 4px solid gray;
+    padding: 0 10px;
+    align-items: center;
+}
+.main{
+    grid-area: m;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col{
+    border:1px solid greenyellow;
+    padding: 5px;
+}
+.article{
+    grid-area: ar;
+    border: 1px solid orangered;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+.card1{
+    border: 1px solid green;
+}
+.my-information{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.my-information >div >img{
+    width: 100%;
+    height: 100%;
+}
+.text-normal{
+    padding: 10px;
+}
+.text-normal > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+}
+.card2 > img{
+    width: 100px;
+    height: 100px;
+    grid-column: 1/2;
+}
+.card2 >p{
+    padding: 5px;
+}
+.card2 >p:first-of-type {
+    grid-column: 2/4;
+    padding: 5px;
+}
+.card2 >p:last-of-type{
+    grid-column: 1/4;
+} 
+.footer{
+    grid-area: f;
+    border: 1px solid purple;
+}

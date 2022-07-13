@@ -1,0 +1,24 @@
+{
+    "name":"" ,
+    "weigh":[
+        {
+        "number":0,
+        "unit":"km"
+        } ,
+        {
+        "number":0,
+        "unit":"tons"
+        }
+    ],
+    "live":[],
+    "endangered":true,
+    "foods ":[
+        {
+            "name" : " ",
+            "Quantity" : 0
+        },
+        {}
+    ],
+    "animalsThatEatIt":[],
+    "delicious":5
+}
