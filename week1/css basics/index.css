@@ -1,54 +1,6 @@
-/* div {
-    width: 50%;
- }
- h1 {
-    font-family: "Helvetica";
-  }
-  ul {
-    color: red;
-  }
-  .heading {
-    font-weight: bold;
-    vertical-align: middle;
-  }
-  
-  .tomato {
-    color: tomato;
-  }
-  
-  .gross-color {
-    color: #a3c010;
-  }
-  
-  .nice-color {
-    color: #03bbbb;
-  }
-  #about-me {
-    font-family: sans-serif;
-  }
-  button:hover {
-    background-color: blue;
-    color: black;
-    border: 1px solid black;
-  }  
-  p:nth-child(2) {
-    background: red;
-  } */
 
-  body{
-    background: #ddd;
-  }
-  nav{
-    background-color:rgba(51, 51, 51) ;
-  }
-  .hero-img{
-    width: 100%;
-  }
-  li:first-child{
-    background-color: green;
-  }
-  /* ex 2  */
-  /* #container{
+  /* ex 1  */
+  #container{
     display: inline-block;
     background-color: gray;
     border: 1px solid red;
@@ -70,4 +22,21 @@
   .button{
     background-color: green;
     border-color: green;
-  } */
+    color: white;
+  }
+
+  /* spots */
+  /* 
+    body{
+    background: #ddd;
+  }
+  nav{
+    background-color:rgba(51, 51, 51) ;
+  }
+  .hero-img{
+    width: 100%;
+  }
+  li:first-child{
+    background-color: green;
+  }
+  */

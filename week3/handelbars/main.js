@@ -1,20 +1,13 @@
-console.log("anas")
+console.log("anas");
 
+let sourse = $("#template").html();
 
-let sourse = $("#template").html()
-
-let template = Handlebars.compile(sourse)
-
-
-
-
+let template = Handlebars.compile(sourse);
 
 let arr = {
-    teams : [
-        "anas" , "osed" , "abrar " , "blsam "
-    ]
-}
+  teams: ["anas", "osed", "khaled ", "Ahmad"],
+};
 
-let newHtml = template(arr)
+let newHtml = template(arr);
 
-$("#people").append(newHtml)
+$("#people").append(newHtml);

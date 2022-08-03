@@ -72,15 +72,18 @@
 
 /* ex2 */
 
+
+/* 
 .my-layout{
     display: grid;
     background-color: antiquewhite;
     height: 100vh;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 6fr 1fr;
     grid-template-areas: 
-    "n n n n n"
-    "as m m ar ar"
-    "f f f f f";
+    "n n n"
+    "as m ar"
+    "f f f";
     grid-gap: 30px;
 }
 
@@ -116,74 +119,92 @@
 .aside{
     grid-area: as;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    justify-content: end;
+    grid-template-columns: minmax(200px ,1fr) ;
+    justify-items: center;
+    border: 2px solid gray;
 }
 .parent-letters{
     border: 4px solid gray ;
 }
 .parent-letters > div {
     display: grid;
-    height: 24%;
+    height: 24.3%;
     border-bottom: 4px solid gray;
     padding: 0 10px;
     align-items: center;
 }
 .main{
     grid-area: m;
-    border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid gray;
 }
 .col{
-    border:1px solid greenyellow;
+    border:1px solid gray;
     padding: 5px;
 }
 .article{
     grid-area: ar;
-    border: 1px solid orangered;
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: auto;
+    border: 2px solid gray;
 }
-.card1{
-    border: 1px solid green;
+.first-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "imin imin" 
+    "juin juin";
 }
-.my-information{
+.img-info{
+    grid-area: imin;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
-.my-information >div >img{
+.img {
+    border: 1px solid white;
+}
+.img >img{
     width: 100%;
     height: 100%;
 }
-.text-normal{
+.info{
+    padding: 5px;
+}
+.just-info{
+    grid-area: juin;
+    display: grid;
     padding: 10px;
 }
-.text-normal > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card2 {
+.second-card{
     display: grid;
-    grid-template-columns: 1fr 3fr ;
+    grid-template-columns: 1fr 3fr;
 }
-.card2 > img{
-    width: 100px;
-    height: 100px;
-    grid-column: 1/2;
+
+.container-img{
+    border: 2px solid  white
 }
-.card2 >p{
-    padding: 5px;
+.second-card > .container-img >img{
+    width: 100%;
+    height: 100%;
 }
-.card2 >p:first-of-type {
-    grid-column: 2/4;
-    padding: 5px;
+.second-card > div:last-of-type {
+    padding: 10px;
+    border: 1px solid gray;
 }
-.card2 >p:last-of-type{
-    grid-column: 1/4;
-} 
+
 .footer{
     grid-area: f;
-    border: 1px solid purple;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: gray;
+    color: white;
+    justify-items: end;
 }
+.footer > p{
+    border: 1px solid red;
+    background-color: white;
+    padding: 5px;
+    color: gray;
+} */

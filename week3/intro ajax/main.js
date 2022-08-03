@@ -76,10 +76,17 @@
 // }
 
 //ex 4 
+// let apiKey="PU2j4y10zQLCrVjeePWJMEkaUbSxyjAq" // for search
 
- //apikey =  JiuCNUKOPsNZricUWQedsItDpwUlZWAO
+// let limit = 5
 
-//  let url = "https://api.giphy.com/v1/gifs/trending?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g"
+
+
+//  //apikey =  JiuCNUKOPsNZricUWQedsItDpwUlZWAO //trending
+// // ryan+gosling
+//  let url = `http://api.giphy.com/v1/gifs/search?q=cat&api_key=${apiKey}&limit=${limit}`
+
+//  //let url1 = "https://api.giphy.com/v1/gifs/search?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g"
 
 //  const fetch = function(url){
 
@@ -98,7 +105,8 @@
 //  }
 
 //  function printResults(data){
-//     let src = data.data[1].embed_url;
+
+//     let src = data.data[0].embed_url;
 
 //     $("body").append(`<iframe  src=${src}></iframe `)
 //  }
@@ -106,7 +114,7 @@
 
 // ex5 
 
-//  let url = "https://api.giphy.com/v1/gifs/trending?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g"
+//  let url = "https://api.giphy.com/v1/gifs/search=?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g"
 
 //  const fetch = function(url){
 
@@ -143,7 +151,7 @@
 //  fetch(url)
 
 
-let data = $.get("https://api.giphy.com/v1/gifs/trending?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g", function(result){
-    return result
-})
-console.log(data)
+// let data = $.get("https://api.giphy.com/v1/gifs/trending?api_key=JiuCNUKOPsNZricUWQedsItDpwUlZWAO&limit=25&rating=g", function(result){
+//     return result
+// })
+// console.log(data)

@@ -1,81 +1,9 @@
-
-// let users = []
-
-// const getData = function () {
-//     users = [{ name: "Rick" }, { name: "Morty" }]
-//     console.log("Got users")
-// }
-
-// const displayData = function () {
-//     console.log("Going to display users")
-//     for (user of users) {
-//         console.log(user.name)
-//     }
-// }
-
-// getData()
-// displayData()
-
-// const getData = function () {
-//     setTimeout(function () {
-//         users = [{ name: "Rick" }, { name: "Morty" }]
-//         console.log("Got users")
-//     }, 3000)
-// }
-
-// getData()
-
-// let users = []
-
-// const getData = function () {
-//     setTimeout(function () {
-//         users = [{ name: "Rick" }, { name: "Morty" }]
-//         console.log("Got users")
-//     }, 3000);
-// }
-
-// const displayData = function () {
-//     console.log("Going to display users")
-//     for (user of users) {
-//         console.log(user.name)
-//     }
-// }
-
-// getData()
-// displayData()
-
-// let users = []
-
-// const getData = function () {
-//     setTimeout(function () {
-//         users = [{ name: "Rick" }, { name: "Morty" }]
-//         console.log("Got users")
-//     }, 3000);
-// }
-
-// const displayData = function () {
-//     console.log("Going to display: " + users)
-//     for (user of users) {
-//         console.log(user.name)
-//     }
-// }
-
-// getData()
-// displayData()
-
-
-// const timer = function(){
-//     console.log(new Date())
-//   }
-  
-//   setInterval(timer, 1000)
-
-// spot check 4 
+// spot check 4
 
 // let square2 = number => number * number
 // console.log(square2(4))
 
-// spot check 5 
+// spot check 5
 
 // let getFormalTitle = (title ,username) => title + "  "+username ;
 
@@ -103,7 +31,7 @@
 // const push = function () {
 //     console.log("pushing it!")
 //   }
-  
+
 //   const pull = function () {
 //     console.log("pulling it!")
 //   }
@@ -123,23 +51,22 @@
 //         mycallback(Time)
 //   }
 
-
 //   getTime(returnTime)
 
-// ex 3 
+// ex 3
 
 // const displayData = function (alertDataFunc, logDataFunc, data) {
-//     alertDataFunc(data);
-//     logDataFunc(data);
-//   };
-//   function logData(data){
-//     console.log(data)
-//   }
-//   displayData(alert, logData, "I like to party")
+//    alertDataFunc(data);
+//   logDataFunc(data);
+// };
+// function logData(data) {
+//   console.log(data);
+// }
+// displayData(alert, logData, "I like to party");
 
-/// ex4 arrow 
+/// ex4 arrow
 
-// let sum = (num1 ,num2 ,num3 )=> num1 +num2 + num3 
+// let sum = (num1 ,num2 ,num3 )=> num1 +num2 + num3
 
 // console.log(sum(3,4,9));
 
@@ -151,7 +78,6 @@
 
 // ex 6
 
-
 // const determineWeather = temp => {
 //     if(temp > 25){
 //       return "hot"
@@ -159,33 +85,49 @@
 //     return "cold"
 //   }
 
-// let commentOnWeather =(num)=> console.log("it's " + determineWeather(num)) 
+// let commentOnWeather =(num)=> console.log("it's " + determineWeather(num))
 
 // commentOnWeather(30) //returns "It's hot"
 // commentOnWeather(22) //returns "It's cold"
 
-// ex7  
+// ex7
 
 // const explode = (lightFunc, soundFunc, sound) => {
-//     lightFunc()
-//     soundFunc(sound)
-//   }
-      
-//   const shineLight = () => document.getElementById("box").style.backgroundColor = "yellow"
-      
-//   const makeSound = sound => alert(sound)
-      
-//   explode(shineLight, makeSound, "BOOM")
+//   lightFunc();
+//   soundFunc(sound);
+// };
 
+// const shineLight = () => {
+//   document.getElementById("box").style.backgroundColor = "yellow";
+// };
+
+// const makeSound = (sound) => alert(sound);
+
+// explode(shineLight, makeSound, "BOOM");
+
+////// This Is for My Study
 // let x = {
-//     count: 12,
-//     go: () => {
-//         setTimeout(function () {
-//             console.log(this.count)
-//         }, 1500)
-//     }
-// }
-// x.go()
+//   count: 12,
+//   go: () => {
+//     setTimeout(function () {
+//       console.log(this.count);
+//     }, 1500);
+//   },
+// };
+// x.go();
+
+// const run = (name) => {
+//   console.log("Run, " + name + ", run!");
+// };
+// const yell = function (action) {
+//   let env = "Forest";
+//   action(env);
+// };
+// run(yell);
+// let result = document.getElementById("box").style.backgroundColor;
+// console.log(result);
+
+// setTimeout(console.log("Hi anas"), 3000);
 
 // const run = (name) => {console.log("Run, " + name + ", run!")}
 // const yell = function(action){
@@ -217,7 +159,7 @@
 // ]
 
 // const removeComment = function (postId, commentId) {
-//     for (post in posts) {   // here for in loop on index 
+//     for (post in posts) {   // here for in loop on index
 //         if (post.id === postId) {
 //             removeCommentFromPost(post, commentId);
 //         }
@@ -227,17 +169,10 @@
 // const removeCommentFromPost = function(post, commentId){
 //     for (let i =0; i < comments.length; i++) {
 //         if (post.comments[i].id === commentId) {
-//             post.comments.remove(comment); // I can't use remove method with array 
+//             post.comments.remove(comment); // I can't use remove method with array
 //         }
 //     }
 // }
 
 // removeComment(2, 3)
 // console.log()
-
-
-
-
-
-
-

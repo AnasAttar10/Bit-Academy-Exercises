@@ -1,5 +1,32 @@
 
 
+// part 1 
+
+// ex1 
+// (5 > 2) && false  => false 
+// !("knife" === "sword") => true 
+// (1 < 2) || (-1 > -1) || !false => true
+// "" =? false
+// (31 % 5) == "1" => true 
+// !!true => true
+// "5th Avenue" != "5th Avenue" =>false
+// 52 !== "52" => true
+// (undefined || null) => false
+ 
+// ex2 
+// let a = 3
+// let c = 0
+// let b = a
+// b = a
+// c = a
+// b = c
+// a = b
+
+// result => a=3 ,b=3 ,c= 3
+
+
+/// part 2 
+
 // ex1 js basic
 
 // let boughtTesla = true
@@ -71,13 +98,20 @@
 //         {bookname :" C " , auther :"ameer "}  ,
 //     ]
 // }
-// ex5 js basic
-// const reservation ={
+
+//ex5 js basic
+
+// const oldReservation ={
 //     Bob :{claimed :false} , 
 //     Ted :{claimed :true }
 // }
 // const oldname = prompt("Please Enter the name for your reservation")
-// const username= oldname[0].toUpperCase() + oldname.substring(1);
+// const username = oldname.toLowerCase();
+// const reservation = {}
+// for (const [key, value] of Object.entries(oldReservation)) {
+//   reservation[key.toLowerCase()]= value
+// }
+
 // if(reservation[username] !== undefined){
 //     if(!reservation[username].claimed){
 //         alert("Welcome " + username)
@@ -88,7 +122,7 @@
 //     alert("You have no rservation ")
 //     reservation[username]={claimed :true}
 // }
-
+// console.log(reservation);
 
 /// there are extra ec should solve it 
 
@@ -103,6 +137,7 @@
 //         const age = ages[index];
 //         people.push({"name" : name , "age" :age})  
 // }
+//    console.log(people);
 // for (const person of people) {
 //     console.log(person.name + " is "+person.age + " years old")
 // }
