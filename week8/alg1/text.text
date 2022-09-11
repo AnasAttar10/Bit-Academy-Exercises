@@ -1,0 +1,13 @@
+(1,3,5)=>5
+(1,5,-1)=>5
+(5,5,5)=>5
+
+
+function maxNumber(numOne , numTwo ,numThree){
+    if(numOne >= numTwo && numOne >= numThree)
+    return numOne 
+    if(numTwo>= numOne && numTwo >= numThree)
+    return numTwo 
+    if(numThree >= numOne && numThree >= numTwo)
+    return numThree 
+}

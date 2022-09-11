@@ -8,7 +8,7 @@ router.get("/people", function (req, res) {
     res.send(people);
   });
 });
-module.exports = router;
+
 // ex1
 router.post("/person", (req, res) => {
   let person = {
@@ -37,3 +37,5 @@ router.delete("/apocalypse", (req, res) => {
   Person.remove();
   res.end();
 });
+
+module.exports = router;
